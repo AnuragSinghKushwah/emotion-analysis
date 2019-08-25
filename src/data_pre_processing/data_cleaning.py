@@ -45,6 +45,12 @@ def clean_csv(file_name, output_csv):
     # Removing Extra Spaces and Tokenizing Text
     data_frame["clean_text"] = data_frame['clean_text'].apply(lambda x : tokenize_string(input_str=x))
 
+    # Filling Null Values after cleaning of text
+    data_frame['clean_text'] = data_frame['clean_text'].fillna("NULL")
+
+    # Finding length of text after cleaning
+    data_frame['post_clean_len'] = [len(t) for t in data_frame['clean_text'].values]
+
     print(data_frame.head())
     data_frame.to_csv(output_csv)
 

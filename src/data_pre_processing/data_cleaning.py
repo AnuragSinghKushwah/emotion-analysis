@@ -91,7 +91,7 @@ def tokenize_string(input_str):
 
 if __name__ == '__main__':
     file_name = "C:\\Users\\Anurag\\PycharmProjects\\DeepLearning\\emotion-analysis\\dataset\\smile-annotations-final.csv"
-    output_csv = "C:\\Users\\Anurag\\PycharmProjects\\DeepLearning\\emotion-analysis\\dataset\\cleaned_tweets.csv"
+    output_csv = "C:\\Users\\Anurag\\PycharmProjects\\DeepLearning\\emotion-analysis\\dataset\\cleaned_tweets_1.csv"
     clean_csv(file_name=file_name, output_csv=output_csv)
 
 

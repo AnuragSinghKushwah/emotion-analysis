@@ -38,4 +38,4 @@ if __name__ == '__main__':
     emotion_counts(data_frame=data_frame)
 
     # Plotting Length of text before and after data cleaning
-    # plot_text_lengths(data_frame=data_frame)
+    plot_text_lengths(data_frame=data_frame)
